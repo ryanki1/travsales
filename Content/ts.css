@@ -1,0 +1,15 @@
+﻿@font-face 
+{
+    font-family:    cabinsketch;
+    src:            url('fonts/cabinsketch-regular.eot');
+    src:            local('☺'),
+                    url('fonts/cabinsketch-regular.svg') format('svg'),
+                    url('fonts/cabinsketch-regular.ttf') format('ttf'),
+                    url('fonts/cabinsketch-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+article section {
+    font-family: cabinsketch;
+}

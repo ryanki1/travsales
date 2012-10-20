@@ -1,0 +1,68 @@
+@model AddCon_TravellingSalesman.Models.SalesmanModel
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.FirstName)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.FirstName)
+    @Html.ValidationMessageFor(model => model.FirstName)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.LastName)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.LastName)
+    @Html.ValidationMessageFor(model => model.LastName)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.EMail)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.EMail)
+    @Html.ValidationMessageFor(model => model.EMail)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Tel)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Tel)
+    @Html.ValidationMessageFor(model => model.Tel)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Mob)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Mob)
+    @Html.ValidationMessageFor(model => model.Mob)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Fax)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Fax)
+    @Html.ValidationMessageFor(model => model.Fax)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Latitude)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Latitude)
+    @Html.ValidationMessageFor(model => model.Latitude)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Longitude)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Longitude)
+    @Html.ValidationMessageFor(model => model.Longitude)
+</div>
+

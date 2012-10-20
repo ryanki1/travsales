@@ -1,0 +1,50 @@
+@model AddCon_TravellingSalesman.Models.SalesmanModel
+
+@{
+    ViewBag.PageId = "salesmanDetailPage";
+    ViewBag.Controller = "SalesmanModels";
+    ViewBag.Title = "Details";
+    ViewBag.Salesman = Model.FirstName + " " + Model.LastName;
+    ViewBag.Latitude = Model.Latitude;
+    ViewBag.Longitude = Model.Longitude;
+}
+
+@section Header {
+    @Html.ActionLink("Back", "Index", "SalesmanModels", routeValues: null, htmlAttributes: new { data_icon = "arrow-l", @class = "ui-btn-left"  })
+    <h2>@ViewBag.Salesman</h2>
+    @Html.Partial("_LoginPartial")    
+}
+
+    <div id="EMail">
+        <img id="mail" src="~/Content/images/mail.png" />
+        <span class="display-field">@Model.EMail</span>
+    </div>
+
+    <div id="Mob">
+        <img id="smartphone" src="~/Content/images/smartphone.png" />
+        <span class="display-field">@Model.Mob</span>
+    </div>
+
+    <div id="Tel">
+        <img id="telephone_red" src="~/Content/images/telephone_red.png" />
+        <span class="display-field">@Model.Tel</span>
+    </div>
+
+    <div id="Fax">
+        <img id="printer_mono" src="~/Content/images/printer_mono.png" />
+        <span class="display-field">@Model.Fax</span>
+    </div>
+
+    <article class="maps border-radius info-box gray-border gray-gradient">   
+        <div class="border-top-radius" style="float:left; position: relative; background-color: rgb(229, 227, 223); overflow: hidden;">
+        </div>         
+        <p>
+            You want to visit and talk to us? No problem! @ViewBag.Salesman is
+            <mark>right round the corner</mark>. If your browser is able to detect your
+            position, it will show a route to @(ViewBag.Salesman + "'s") Sales Office.
+        </p>
+    </article>    
+
+@Html.Partial("_geo") 
+
+

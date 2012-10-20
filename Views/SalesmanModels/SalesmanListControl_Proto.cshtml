@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AddCon_TravellingSalesman.Models.SalesmanModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            EMail
+        </th>
+        <th>
+            Tel
+        </th>
+        <th>
+            Mob
+        </th>
+        <th>
+            Fax
+        </th>
+        <th>
+            Latitude
+        </th>
+        <th>
+            Longitude
+        </th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+        <td>
+			@item.FirstName
+        </td>
+        <td>
+			@item.LastName
+        </td>
+        <td>
+			@item.EMail
+        </td>
+        <td>
+			@item.Tel
+        </td>
+        <td>
+			@item.Mob
+        </td>
+        <td>
+			@item.Fax
+        </td>
+        <td>
+			@String.Format("{0:F}", item.Latitude)
+        </td>
+        <td>
+			@String.Format("{0:F}", item.Longitude)
+        </td>
+    </tr>
+    }
+</table>
+
+

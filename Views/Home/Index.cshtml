@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Controller = "Home";
+    ViewBag.Title = "Index";
+    ViewBag.Salesman = "";
+    ViewBag.Latitude = 0;
+    ViewBag.Longitude = 0;
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+</p>
+
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Navigation</li>
+    <li>@Html.ActionLink("About", "About", "Home")</li>
+    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    <li>@Html.ActionLink("Salesman", "Index", "SalesmanModels")</li>
+
+</ul>
+
+@Html.Partial("_geo") 
+
+<article>
+    <section>
+ Quisque odio turpis, dignissim quis dignissim non, commodo interdum dolor. Sed eu leo lectus, varius consequat diam. Fusce fermentum enim eget erat ullamcorper malesuada consequat nulla dapibus. Vestibulum ornare facilisis erat, ut tempor arcu ullamcorper sed. Vivamus fringilla tortor vitae eros blandit pharetra. Donec sed elit id eros adipiscing luctus nec id turpis. Donec a imperdiet lacus. Ut vel augue urna, id sodales diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at fringilla elit. Praesent porttitor nunc et libero ornare et viverra nisi porttitor. Nullam eget metus fermentum ligula malesuada sollicitudin.
+
+Proin nunc felis, lacinia sed convallis at, posuere eget risus. Donec metus massa, pulvinar eu convallis ac, cursus vitae odio. Proin in tristique sem. Aenean vel justo sit amet dui accumsan ultricies id et neque. Aliquam ligula justo, sodales lacinia rutrum ut, hendrerit et diam. Duis aliquam felis a urna blandit dapibus. Fusce 
+
+    </section>
+    <section>
+ Quisque odio turpis, dignissim quis dignissim non, commodo interdum dolor. Sed eu leo lectus, varius consequat diam. Fusce fermentum enim eget erat ullamcorper malesuada consequat nulla dapibus. Vestibulum ornare facilisis erat, ut tempor arcu ullamcorper sed. Vivamus fringilla tortor vitae eros blandit pharetra. Donec sed elit id eros adipiscing luctus nec id turpis. Donec a imperdiet lacus. Ut vel augue urna, id sodales diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at fringilla elit. Praesent porttitor nunc et libero ornare et viverra nisi porttitor. Nullam eget metus fermentum ligula malesuada sollicitudin.
+
+Proin nunc felis, lacinia sed convallis at, posuere eget risus. Donec metus massa, pulvinar eu convallis ac, cursus vitae odio. Proin in tristique sem. Aenean vel justo sit amet dui accumsan ultricies id et neque. Aliquam ligula justo, sodales lacinia rutrum ut, hendrerit et diam. Duis aliquam felis a urna blandit dapibus. Fusce 
+
+    </section>
+</article>

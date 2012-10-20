@@ -1,0 +1,9 @@
+﻿@model IEnumerable<AddCon_TravellingSalesman.Models.SalesmanModel>
+
+<ul data-role="listview" data-inset="true">
+    @foreach (var item in Model) {
+        <li>@Html.ActionLink(@item.EMail, "Details", new { id=item.ID })</li>
+    }
+</ul>
+
+
